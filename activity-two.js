@@ -11,5 +11,3 @@ lunch = "soup";
 dinner = "pasta";
 
 console.log(`Tomorrow I will eat ${breakfast} for breakfast, ${lunch} for lunch and ${dinner} for dinner.`);
-
-// Create tick tac toe board

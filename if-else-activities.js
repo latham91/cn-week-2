@@ -39,7 +39,7 @@ function checkTopping(topping) {
     }
 }
 
-checkTopping();
+checkTopping("Pepperoni");
 
 // Activity 3 - Create a variable called password.
 // Check how many letters are in the password, if there are less than 8 log to the console that the password is too short.
@@ -131,6 +131,8 @@ checkTime(12);
 
 // Activity 7 - Take the string: "jfrndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi".
 // Find the index of a last vowel in the string.
+
+// Added some extra commnets to keep track of the logic in my head.
 
 function findLastVowel(string) {
     let vowels = ["a", "e", "i", "o", "u"];

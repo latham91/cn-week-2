@@ -16,3 +16,8 @@
 //  && - logical AND operator - both sides need to be true
 //  || - logical OR operator - one side needs to be true
 //  ! - logical NOT operator - reverses the boolean value
+
+// Ternary Operator
+///////////////////////////
+let age = 30;
+let adult = age > 18 ? true : false;

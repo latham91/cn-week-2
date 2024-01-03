@@ -149,6 +149,8 @@ findLastVowel("jfrndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhg
 // Create an if statement that checks if the last letter is the same as the first.
 // If it is return true, otherwise return false.
 
+// Instead of using word as a variable I have made it an argument for the function.
+
 function checkFirstLastLetter(word) {
     const first = word.charAt(0);
     const last = word.charAt(word.length - 1);

@@ -21,3 +21,16 @@
 ///////////////////////////
 let age = 30;
 let adult = age > 18 ? true : false;
+
+
+// Switch Statement
+///////////////////////////
+
+switch (key) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}

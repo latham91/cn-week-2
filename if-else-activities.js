@@ -145,7 +145,20 @@ function findLastVowel(string) {
 
 findLastVowel("jfrndklhgfndjkjlkgperfijfhdknsadcvjhiiohjfkledsopiuhgtyujwsdxcvhgfdjhiopiwquhejkdsoiufghedjwshi");
 
-// Activity 8 - Create two variables called num1 and num2.
+// Activity 8 - Create a variable called word that takes a string.
+// Create an if statement that checks if the last letter is the same as the first.
+// If it is return true, otherwise return false.
+
+function checkFirstLastLetter(word) {
+    const first = word.charAt(0);
+    const last = word.charAt(word.length - 1);
+
+    console.log(first === last ? true : false);
+}
+
+checkFirstLastLetter("hello");
+
+// Activity 9 - Create two variables called num1 and num2.
 // Create an if statement that checks if the result of the sum is even.
 // If it is return the number, otherwise return the numbers multiplied together.
 

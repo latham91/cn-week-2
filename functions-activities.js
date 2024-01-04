@@ -14,6 +14,7 @@ favColor2("purple");
 
 // Activity 1 - Take this code and turn it into an arrow function - code below
 
+// Regular function
 function factorial(n) {
     if (n === 0 || n === 1) {
         return 1;
@@ -24,6 +25,7 @@ function factorial(n) {
 
 console.log(factorial(33));
 
+// Arrow function
 const arrowFactorial = (n) => {
     if (n === 0 || n === 1) {
         return 1;

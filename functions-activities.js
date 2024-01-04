@@ -6,9 +6,9 @@ function factorial(n) {
     } else {
         return n * factorial(n - 1);
     }
-
-    console.log(factorial(33));
 }
+
+console.log(factorial(33));
 
 const arrowFactorial = (n) => {
     if (n === 0 || n === 1) {
@@ -16,9 +16,9 @@ const arrowFactorial = (n) => {
     } else {
         return n * arrowFactorial(n - 1);
     }
-
-    console.log(arrowFactorial(33));
 };
+
+console.log(arrowFactorial(33));
 
 // Activity 2 - Edit the below snippet to include two parameters and a running order count updated when the function is called:
 

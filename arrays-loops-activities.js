@@ -186,4 +186,4 @@ for (let i = 0; i < 10; i++) {
 }
 
 // for loop pros - easier to read.
-// for loop cons - ?
+// for loop cons - runs for a finite number of times.

@@ -41,11 +41,12 @@ console.log(arrowFactorial(33));
 let orderCount = 0;
 
 const takeOrder = (topping1, topping2) => {
-    console.log(`Pizza with ${topping1} and ${topping2}`);
     orderCount++;
+    console.log(`Pizza with ${topping1} and ${topping2} you have ordered ${orderCount} pizza(s).`);
 };
 
 takeOrder("pineapple", "ham"); // Passes in the arguments "pineapple" and "ham".
+// repeat function multiple times to add more orders.
 
 // Activity 3 - Cash machine time, dispenses cash if pin number is correct and balance is equal to or more than the ammount trying to withdraw.
 

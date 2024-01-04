@@ -52,9 +52,11 @@ let balance = 1000;
 
 const cashMachine = (pinNumber, cash) => {
     if (pinNumber === pin && cash <= balance) {
+        // checks if pin number is correct and if the cash is less than or equal to the balance
         console.log(`Dispensing £${cash}`);
         balance -= cash; // removes the cash from the balance
     } else if (pinNumber !== pin) {
+        // checks if pin number is incorrect
         console.log("Incorrect pin number");
     } else {
         console.log("Insufficient funds");

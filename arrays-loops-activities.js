@@ -39,7 +39,7 @@ let students = [
         age: 22,
         grade: 88,
     },
-];
+]; // Array of objects.
 
 // map()
 let studentNames = students.map((student, index) =>
@@ -186,4 +186,4 @@ for (let i = 0; i < 10; i++) {
 }
 
 // for loop pros - easier to read.
-// for loop cons - runs for a finite number of times.
+// for loop cons - runs for a finite number of times. can also be a pro though.

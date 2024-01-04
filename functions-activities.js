@@ -73,3 +73,37 @@ cashMachine(1234, 100); // Passes in the arguments 1234 and 500.
 // console.log(balance); // 500 balance
 
 // If you run the function 5 times, the balance will be 500.
+
+// Stretch on Activity 3 - Using multiple functions
+
+let pin2 = 1234;
+let balance2 = 1000;
+
+const checkPin = (pinNumber) => {
+    if (pinNumber === pin2) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+const checkBalance = (cash) => {
+    if (cash <= balance2) {
+        return true;
+    } else {
+        return false;
+    }
+};
+
+const cashMachine2 = (pinNumber, cash) => {
+    if (checkPin(pinNumber) && checkBalance(cash)) {
+        console.log(`Dispensing £${cash}`);
+        balance2 -= cash;
+    } else if (!checkPin(pinNumber)) {
+        console.log("Incorrect pin number");
+    } else {
+        console.log("Insufficient funds");
+    }
+};
+
+cashMachine2(1234, 100); // Passes in the arguments 1234 and 500.

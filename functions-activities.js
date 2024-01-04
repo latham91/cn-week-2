@@ -53,6 +53,7 @@ let balance = 1000;
 const cashMachine = (pinNumber, cash) => {
     if (pinNumber === pin && cash <= balance) {
         console.log(`Dispensing £${cash}`);
+        balance -= cash; // removes the cash from the balance
     } else if (pinNumber !== pin) {
         console.log("Incorrect pin number");
     } else {
@@ -60,4 +61,11 @@ const cashMachine = (pinNumber, cash) => {
     }
 };
 
-cashMachine(1234, 500); // Passes in the arguments 1234 and 500.
+cashMachine(1234, 100); // Passes in the arguments 1234 and 500.
+// cashMachine(1234, 100); // 800 balance
+// cashMachine(1234, 100); // 700 balance
+// cashMachine(1234, 100); // 600 balance
+// cashMachine(1234, 100); // 500 balance
+// console.log(balance); // 500 balance
+
+// If you run the function 5 times, the balance will be 500.

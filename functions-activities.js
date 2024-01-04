@@ -1,3 +1,17 @@
+// Lesson activity - create a function called favColor. log the color to console.
+const favColor = () => {
+    console.log("My favourite color is purple.");
+};
+
+favColor();
+
+// Lesson activity - change favColor to take a parameter and log the color to console.
+const favColor2 = (color) => {
+    console.log(`My favourite color is ${color}.`);
+};
+
+favColor2("purple");
+
 // Activity 1 - Take this code and turn it into an arrow function - code below
 
 function factorial(n) {

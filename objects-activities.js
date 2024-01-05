@@ -1,5 +1,6 @@
 // Lesson activity -- create an object called person with a key called name and set the value to your name
 // add another key called age.
+// further activity add list of favourite songs to person object and log them to console.
 
 let person = {
     name: "Aaron",
@@ -7,12 +8,23 @@ let person = {
 };
 
 person.age = 30; // add age key to person object
+person.favSongs = ["song1", "song2", "song3", "song4"]; // add favSongs key to person object
 
 console.log(person.age);
+
+// favSongs logs
+console.log(person.favSongs); // logs array of favSongs
+console.log(person["favSongs"]); // using bracket notation
+console.log(person.favSongs[2]); // song3 in the array at index 2
+person.favSongs.forEach((song) => console.log(song)); // iterates through array and logs each song
+
+///////////////////////////////////////////////////////////////
 
 // Lesson activity 2 - create a key called weekendAlarm, with a value saying "no alarm needed" and a key called weekdayAlarm, with a value of saying "get up at 7am".
 // create a variable called day and one called alarm.
 // If day is Saturday or Sunday, set alarm to weekendAlarm. If day is a weekday, set alarm to weekdayAlarm
+
+// Turned this into a function so I can call it with different days.
 
 let alarmObj = {
     weekendAlarm: "no alarm needed",
@@ -31,6 +43,8 @@ const alarmClock = (day) => {
 
 console.log(alarmClock("Monday"));
 
+///////////////////////////////////////////////////////////////
+
 // ACTIVITY 1
 // Let's edit our person object to include
 // A function called sayHi and when it's called, it shout return "Hello my name is ${this.name}"
@@ -45,6 +59,8 @@ let activityOnePerson = {
 };
 
 console.log(activityOnePerson.sayHi());
+
+///////////////////////////////////////////////////////////////
 
 // ACTIVITY 2
 // Create an object called pet with the key values of:
@@ -68,6 +84,8 @@ let pet = {
 };
 
 console.log(pet.eat());
+
+///////////////////////////////////////////////////////////////
 
 // ACTIVITY 3
 // Create an object called coffeeShop with key values of:

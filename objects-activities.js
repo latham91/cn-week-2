@@ -66,6 +66,8 @@ console.log(activityOnePerson.sayHi());
 // Create an object called pet with the key values of:
 // name, typeOfPet, age, colour. and methods called eat and drink. they should return a string saying "[pet name] is eating/drinking".
 
+// using standard functions for methods
+
 let pet = {
     name: "Sully",
     age: 2,
@@ -80,7 +82,7 @@ let pet = {
         return `${this.name} is drinking`;
     },
 
-    // can also be writted with eat() and drink() when using arrow function the 'this' keyword will not work
+    // can also be writted with eat() and drink() es6 functions, when using arrow function the 'this' keyword is not accessible
 };
 
 console.log(pet.eat());

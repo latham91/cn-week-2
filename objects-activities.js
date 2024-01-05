@@ -111,7 +111,7 @@ let coffeeShop = {
     total: 0,
 
     // methods
-    orderDrink: function (drink) {
+    orderDrink(drink) {
         if (drink in this.drinks) {
             // make sure the drink they order is in the list of drinks.
             this.order.push(drink);
@@ -122,7 +122,7 @@ let coffeeShop = {
         }
     },
 
-    orderFood: function (food) {
+    orderFood(food) {
         if (food in this.food) {
             // make sure the food they order is in the list of food.
             this.order.push(food);
@@ -133,7 +133,7 @@ let coffeeShop = {
         }
     },
 
-    completeOrder: function () {
+    completeOrder() {
         console.log(`Thank you for your order!\nYour order is: ${this.order}\nYour total is: £${this.total}`);
 
         this.order = [];
